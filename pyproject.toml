@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "httpbench"
+version = "1.0.0"
+description = "Lightweight HTTP benchmarking tool. Pure Python, zero dependencies."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "1fzx23"},
+]
+keywords = ["http", "benchmark", "performance", "load-test", "cli"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Testing",
+    "Topic :: System :: Benchmark",
+]
+
+[project.scripts]
+httpbench = "httpbench.httpbench:main"
+
+[project.urls]
+Homepage = "https://github.com/1fzx23/httpbench"
+Repository = "https://github.com/1fzx23/httpbench"
